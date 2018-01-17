@@ -1,4 +1,4 @@
-Simple twitter app with scala 2.12.4, playframework 2.6.10, react 16.2.0 and redux 3.7.2
+Homepage app with scala 2.12.4, playframework 2.6.10, react 16.2.0 and redux 3.7.2
 =
 Example app how to use play framework, react and redux to fetch and display tweets.
 
