@@ -6,10 +6,10 @@ import React from 'react';
 import {render} from 'react-dom';
 import {createStore, applyMiddleware, compose} from 'redux';
 import {Provider} from 'react-redux';
-import App from './components/App';
 import {loadState, saveState} from "./localStorage";
 import reducers from './reducers'
-import tweetDataService from './middleware/DataService';
+import dataService from './middleware/DataService';
+import App from "./components/App";
 
 const initialState = loadState();
 
@@ -17,7 +17,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 let store = createStore(
     reducers,
     initialState,
-    composeEnhancers(applyMiddleware(tweetDataService))
+    composeEnhancers(applyMiddleware(dataService))
 );
 
 store.subscribe(() => {
@@ -26,7 +26,7 @@ store.subscribe(() => {
 
 render(
     <Provider store={store}>
-        <App/>
+        <App />
     </Provider>,
     document.getElementById('reactView')
 );
