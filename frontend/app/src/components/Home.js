@@ -66,7 +66,6 @@ const Home = () => {
                 <li>Mysql</li>
             </ul>
         </div>;
-
     return (
         <div>
             <CollapsableContentEntry id="aboutId" bgColorCssClass="bg-dark" isRoundedTop={false} isRoundedBottom={false}
@@ -88,7 +87,6 @@ const Home = () => {
                 {programmingText}
             </CollapsableContentEntry>
         </div>
-
     )
 };
 
