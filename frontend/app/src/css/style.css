@@ -6,3 +6,18 @@ nav a {
     padding: 0.5rem 1rem;
 }
 
+
+.todoInfoContainer {
+    border: 1px solid black;
+    white-space: pre-line;
+    margin-top: 1%;
+    padding: 1% 1% 1% 1%;
+}
+
+.todoTextArea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+
+

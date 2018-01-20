@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import NoMatch from "./NoMatch";
 import Home from './Home';
 import Navbar from './Navbar';
-import AppsContainer from '../container/AppsContainer';
+import TodoContainer from "../container/TodoContainer";
 
 const App = () => (
     <Router>
@@ -12,7 +12,7 @@ const App = () => (
             <div className="container">
                 <Switch>
                     <Route exact path="/" component={Home}/>
-                    <Route path="/apps" component={AppsContainer}/>
+                    <Route path="/todoapp" component={TodoContainer} />
                     <Route component={NoMatch}/>
                 </Switch>
             </div>
