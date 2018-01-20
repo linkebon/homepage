@@ -6,7 +6,7 @@ const Home = () => {
     const aboutText =
         <p>
             My name is Staffan Holmgren. I am a 30 years old happily married man with a soon to be 2
-            year old son. Besides as a programmer I enjoy sports, e-sports, cooking food and many other things.
+            year old son. Beside programming I enjoy sports, e-sports, cooking food and many other things.
             <br/>
             <br/>
 
@@ -19,9 +19,9 @@ const Home = () => {
             <br/>
 
             Prior to this homepage I have worked alot with building integration layers with different languages like
-            scala, java, groovy and php. Buildtools as maven, gradle and sbt. Continuous integration tools a jenkins and
-            ansible etc. Currently I enjoy working in scala the most due to the easy and understandable functional
-            programming style..
+            scala, java, groovy and php. Buildtools as maven, gradle and sbt. Continuous integration tools as jenkins and
+            ansible etc. I currently prefer using scala because of the simplicity and understandable functional
+            programming style it provides.
             <br/>
             <br/>
             The goal of this year 2018 is to learn more about frontend programming.
