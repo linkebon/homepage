@@ -13,8 +13,8 @@ const Navbar = (props) => (
                 <Link className="dropdown-item" to="/twitterapp">Twitter app</Link>
                 <Link className="dropdown-item" to="/counterapp">Counter app</Link>
             </div>
+            <Link className="navbar-brand float-right" to="https://www.linkedin.com/in/staffan-holmgren-0b39aa44/" target="_blank">Linkedin</Link>
             <Link className="navbar-brand float-right" to="https://twitter.com/linkebon" target="_blank">Twitter</Link>
-            <Link className="navbar-brand float-right" to="https://se.linkedin.com/" target="_blank">Linkedin</Link>
             <Link className="navbar-brand float-right" to="https://github.com/linkebon" target="_blank">Github</Link>
         </div>
     </nav>
