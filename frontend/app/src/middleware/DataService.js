@@ -1,4 +1,6 @@
 import request from 'superagent';
+import * as actionType from '../actions/ActionType';
+import {updateTweetData, updateTweetDataError, updateTweetDataAutoUpdating, updateTweetDataAutoUpdatingError} from "../actions/TweetActions";
 
 // curried function for generating a get request function which takes a url route, successAction and errorAction.
 const getApiGenerator = next => (route, successAction, errorAction) =>
@@ -13,14 +15,29 @@ const getApiGenerator = next => (route, successAction, errorAction) =>
             next(successAction(data));
         });
 
-
-const dataService= store => next => action => {
+export const tweetDataService = store => next => action => {
     next(action);
     const getApi = getApiGenerator(next);
+    let filter;
+    let count;
     switch (action.type) {
+        case actionType.GET_TWEET_DATA:
+            if (action.filter === undefined || action.filter === "" || action.filter.length < 3) {
+                break;
+            }
+            filter = action.filter;
+            count = action.count ? action.count : '5';
+            getApi('/api/tweets/' + filter + '?count= ' + count, updateTweetData, updateTweetDataError);
+            break;
+        case actionType.GET_TWEET_DATA_AUTOUPDATING:
+            if (action.filter === undefined || action.filter === "" || action.filter.length < 3) {
+                break;
+            }
+            filter = action.filter;
+            count = action.count ? action.count : '5';
+            getApi('/api/tweets/' + filter + '?count= ' + count, updateTweetDataAutoUpdating, updateTweetDataAutoUpdatingError);
+            break;
         default:
             break;
     }
 };
-
-export default dataService;

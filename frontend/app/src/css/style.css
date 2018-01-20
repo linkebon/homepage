@@ -20,4 +20,38 @@ nav a {
     height: 100%;
 }
 
+.tweetInfoContainer {
+    background: aliceblue;
+    white-space: pre-line;
+    padding: 1% 1% 1% 1%;
+    margin-bottom: 5px;
+}
+
+input {
+    max-width: 50%;
+}
+
+.small {
+    max-width: 50px !important;
+    margin-left: 2px;
+}
+
+.twitter-enter {
+    opacity: 0.01;
+}
+
+.twitter-enter.twitter-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.twitter-leave {
+    opacity: 1;
+}
+
+.twitter-leave.twitter-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
 
