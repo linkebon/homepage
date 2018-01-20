@@ -4,6 +4,7 @@ import NoMatch from "./NoMatch";
 import Home from './Home';
 import Navbar from './Navbar';
 import TodoContainer from "../container/TodoContainer";
+import CounterApp from "./CounterApp";
 
 const App = () => (
     <Router>
@@ -12,7 +13,8 @@ const App = () => (
             <div className="container">
                 <Switch>
                     <Route exact path="/" component={Home}/>
-                    <Route path="/todoapp" component={TodoContainer} />
+                    <Route exact path="/counterapp" component={CounterApp}/>
+                    <Route path="/todoapp" component={TodoContainer}/>
                     <Route component={NoMatch}/>
                 </Switch>
             </div>
