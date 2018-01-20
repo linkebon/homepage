@@ -9,11 +9,13 @@ const App = () => (
     <Router>
         <div>
             <Navbar/>
-            <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route path="/apps" component={AppsContainer}/>
-                <Route component={NoMatch}/>
-            </Switch>
+            <div className="container">
+                <Switch>
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/apps" component={AppsContainer}/>
+                    <Route component={NoMatch}/>
+                </Switch>
+            </div>
             <div>
                 {/*footer*/}
             </div>
