@@ -19,7 +19,8 @@ const Home = () => {
             <br/>
 
             Prior to this homepage I have worked alot with building integration layers with different languages like
-            scala, java, groovy and php. Buildtools as maven, gradle and sbt. Continuous integration tools as jenkins and
+            scala, java, groovy and php. Buildtools as maven, gradle and sbt. Continuous integration tools as jenkins
+            and
             ansible etc. I currently prefer using scala because of the simplicity and understandable functional
             programming style it provides.
             <br/>
@@ -31,9 +32,8 @@ const Home = () => {
             When I write code you can find it in my github repo: <a href="https://github.com/linkebon">linkebon</a>
         </p>;
     const programmingText =
-        <p>
-            Here is a list of programming languages and tools I have used during my career.
-            <br/>
+        <div>
+            <p>Here is a list of programming languages and tools I have used during my career.</p>
             <h4>Languages</h4>
             <ul>
                 <li>java</li>
@@ -53,7 +53,6 @@ const Home = () => {
                 <li><Link to="https://reactjs.org/" target="_blank">React</Link></li>
                 <li><Link to="https://framework.zend.com/" target="_blank">Zend framework</Link></li>
             </ul>
-
             <h4>Build tools</h4>
             <ul>
                 <li>Gradle</li>
@@ -66,7 +65,8 @@ const Home = () => {
                 <li>Oracle</li>
                 <li>Mysql</li>
             </ul>
-        </p>;
+        </div>;
+
     return (
         <div>
             <CollapsableContentEntry id="aboutId" bgColorCssClass="bg-dark" isRoundedTop={false} isRoundedBottom={false}
@@ -77,7 +77,8 @@ const Home = () => {
             </CollapsableContentEntry>
             <CollapsableContentEntry id="githubId" bgColorCssClass="bg-white" isRoundedTop={false}
                                      isRoundedBottom={false}
-                                     textColorCssClass="text-dark" header="Github" secondHeader="linkebon" areaLabel="Github">
+                                     textColorCssClass="text-dark" header="Github" secondHeader="linkebon"
+                                     areaLabel="Github">
                 {githubText}
             </CollapsableContentEntry>
             <CollapsableContentEntry id="programmingId" bgColorCssClass="bg-dark" isRoundedTop={false}
