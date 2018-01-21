@@ -1,15 +1,14 @@
-nav a {
+a {
     color: #9d9d9d;
 }
 
-nav a:hover {
+a:hover {
     color: #ffffff !important;
 }
 
 .navbarPadding {
     padding: 0.5rem 1rem;
 }
-
 
 .todoInfoContainer {
     border: 1px solid black;
