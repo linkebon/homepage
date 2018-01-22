@@ -12,6 +12,8 @@ scalaVersion := "2.12.4"
 libraryDependencies += guice
 libraryDependencies += ws
 
+packageName in Universal := s"${name.value}"
+
 lazy val buildFrontends = taskKey[Unit]("Build frontend")
 
 buildFrontends := {
