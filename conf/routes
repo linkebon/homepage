@@ -10,3 +10,7 @@ GET        /assets/*file           controllers.Assets.versioned(path="/public", 
 
 # api
 GET        /api/tweets/:key        controllers.TwitterController.getTweets(key: String)
+
+# This route catches all routes provided and should route to index and react-router handle all routing in frontend.
+# Have to be last!
+GET        /*anyPath               controllers.HomeController.other(anyPath: String)
