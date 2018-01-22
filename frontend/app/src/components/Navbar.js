@@ -8,10 +8,10 @@ const Navbar = (props) => (
             <Link className="navbar-brand dropdown-toggle" data-toggle="dropdown" to="#" role="button"
                   aria-haspopup="true"
                   aria-expanded="false">Apps</Link>
-            <div className="dropdown-menu " aria-labelledby="Preview">
-                <Link className="dropdown-item" to="/todoapp">Todo app</Link>
-                <Link className="dropdown-item" to="/twitterapp">Twitter app</Link>
-                <Link className="dropdown-item" to="/counterapp">Counter app</Link>
+            <div className="dropdown-menu bg-light" aria-labelledby="Preview">
+                <Link className="dropdown-item text-dark" to="/todoapp">Todo app</Link>
+                <Link className="dropdown-item text-dark" to="/twitterapp">Twitter app</Link>
+                <Link className="dropdown-item text-dark" to="/counterapp">Counter app</Link>
             </div>
             <Link className="navbar-brand float-right" to="https://www.linkedin.com/in/staffan-holmgren-0b39aa44/" target="_blank">Linkedin</Link>
             <Link className="navbar-brand float-right" to="https://twitter.com/linkebon" target="_blank">Twitter</Link>
