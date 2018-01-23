@@ -1,5 +1,4 @@
 #! /bin/bash
-export JAVA_HOME=/home/pi/web/jdk1.8.0_161
 APP_NAME=homepage
 APP_HOME=/home/pi/web/${APP_NAME}
 export JAVA_OPTS="-DXms768m -DXmx1296m -Dconfig.file=/home/pi/web/prod.conf"
