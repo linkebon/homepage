@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import CounterApp from "./CounterApp";
 import TweetApp from "./TweetApp";
 import TodoApp from "./TodoApp";
+import BuyHouseCalculatorApp from "./BuyHouseCalculatorApp";
 
 const App = () => (
     <Router>
@@ -17,6 +18,7 @@ const App = () => (
                     <Route path="/counterapp" component={CounterApp}/>
                     <Route path="/twitterapp" component={TweetApp}/>
                     <Route path="/todoapp" component={TodoApp}/>
+                    <Route path="/buyhousecalculator" component={BuyHouseCalculatorApp}/>
                     <Route component={NoMatch}/>
                 </Switch>
                 <br />

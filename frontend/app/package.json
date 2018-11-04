@@ -8,7 +8,6 @@
     "devPlayServer": "NODE_ENV=dev_play ./node_modules/.bin/webpack -d --watch"
   },
   "author": "linkebon",
-  "license": "ISC",
   "dependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",

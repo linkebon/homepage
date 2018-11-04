@@ -12,6 +12,7 @@ const Navbar = (props) => (
                 <Link className="dropdown-item text-dark" to="/todoapp">Todo app</Link>
                 <Link className="dropdown-item text-dark" to="/twitterapp">Twitter app</Link>
                 <Link className="dropdown-item text-dark" to="/counterapp">Counter app</Link>
+                <Link className="dropdown-item text-dark" to="/buyhousecalculator">Buy house calculator</Link>
             </div>
             <Link className="navbar-brand float-right" to="https://www.linkedin.com/in/staffan-holmgren-0b39aa44/" target="_blank">Linkedin</Link>
             <Link className="navbar-brand float-right" to="https://twitter.com/linkebon" target="_blank">Twitter</Link>
