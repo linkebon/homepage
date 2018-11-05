@@ -8,12 +8,23 @@ class CalculatedBuyingHouseValuesContainer extends Component {
     }
 
     render() {
+        let {buyHouseState} = this.props;
         return (
-            <div>CalculatedBuyingHouseValues</div>
+            <div>
+                Pengar kvar: {buyHouseState.outputValues.moneyLeft}
+            </div>
+
         );
     }
 
 
 }
 
-export default CalculatedBuyingHouseValuesContainer
+const mapStateToProps = (state) => {
+    return {
+        buyHouseState: state.buyHouseCalculatorReducer
+    }
+};
+
+
+export default connect(mapStateToProps)(CalculatedBuyingHouseValuesContainer)

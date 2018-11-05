@@ -19,7 +19,24 @@ class InputParamsContainer extends Component {
                 <CalculationInputParameter componentId="price"
                                            recalculate={this.actions.recalculateWithNewValuePrice}
                                            inputValue={buyHouseState.inputValues.price}
+                                           label="Huspris"
                 />
+
+                <CalculationInputParameter componentId="availableMoney"
+                                           recalculate={this.actions.recalculateWithNewValuePrice}
+                                           inputValue={buyHouseState.inputValues.availableMoney}
+                                           label="Tillgängliga pengar"
+                />
+
+                <CalculationInputParameter componentId="interest"
+                                           recalculate={this.actions.recalculateWithNewValuePrice}
+                                           inputValue={buyHouseState.inputValues.availableMoney}
+                                           label="Ränta"
+                />
+
+
+
+
             </div>
         )
     }

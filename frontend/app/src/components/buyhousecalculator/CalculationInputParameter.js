@@ -6,12 +6,16 @@ class CalculationInputParameter extends Component {
     }
 
     render() {
-        let {componentId, recalculate, inputValue} = this.props;
+        let {componentId, recalculate, inputValue, label} = this.props;
         return (
-                <input id={componentId} className="form-control" type="text" defaultValue={inputValue} onChange={(e) => {
-                    e.preventDefault();
-                    recalculate(e.target.value)
-                }}/>
+            <div>
+                {label}
+                <input id={componentId} className="form-control" type="text" defaultValue={inputValue}
+                       onChange={(e) => {
+                           e.preventDefault();
+                           recalculate(e.target.value)
+                       }}/>
+            </div>
         )
     }
 }
