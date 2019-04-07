@@ -5,8 +5,8 @@ import CollapsableContentEntry from './CollapsableContentEntry';
 const Home = () => {
     const aboutText =
         <p>
-            My name is Staffan Holmgren. I am a 30 years old happily married man with a soon to be 2
-            year old son. Beside programming I enjoy sports, e-sports, cooking food and many other things.
+            My name is Staffan Holmgren. I am a 31 years old happily married man with a soon to be 3
+            year old son and my new born son. Beside programming I enjoy sports, e-sports, cooking food and many other things.
             <br/>
             <br/>
 
@@ -25,7 +25,7 @@ const Home = () => {
             programming style it provides.
             <br/>
             <br/>
-            The goal of this year 2018 is to learn more about frontend programming.
+            The goal of this year 2019 is to learn more about frontend programming.
         </p>;
     const githubText =
         <p>
