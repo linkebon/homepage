@@ -25,10 +25,14 @@ npm needs to be installed globally and in path
 
 universal dist
 ===
+**Make sure you use jdk8**
+
 - ./build.sh
 
 dev
 ==
+**Make sure you use jdk8**
+
 start playserver with debug port 9999
 1. /sbt run -jvm-debug 9999
 2. cd frontend/react-redux-simple-twitter-app
