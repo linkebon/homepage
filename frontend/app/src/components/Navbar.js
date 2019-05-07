@@ -7,11 +7,11 @@ const Navbar = (props) => (
             <Link className="navbar-brand" to="/">Home</Link>
             <Link className="navbar-brand dropdown-toggle" data-toggle="dropdown" to="#" role="button"
                   aria-haspopup="true"
-                  aria-expanded="false">Apps</Link>
+                  aria-expanded="false">My projects</Link>
             <div className="dropdown-menu bg-light" aria-labelledby="Preview">
-                <Link className="dropdown-item text-dark" to="/todoapp">Todo app</Link>
+                <Link className="dropdown-item text-dark" to="http://80.216.91.89:5000/" target="_blank">Bostadsköp</Link>
+                <Link className="dropdown-item text-dark" to="http://80.216.91.89:5001/" target="_blank">Holmgrenska</Link>
                 <Link className="dropdown-item text-dark" to="/twitterapp">Twitter app</Link>
-                <Link className="dropdown-item text-dark" to="/counterapp">Counter app</Link>
             </div>
             <Link className="navbar-brand float-right" to="https://www.linkedin.com/in/staffan-holmgren-0b39aa44/" target="_blank">Linkedin</Link>
             <Link className="navbar-brand float-right" to="https://twitter.com/linkebon" target="_blank">Twitter</Link>

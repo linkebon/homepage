@@ -35,6 +35,6 @@ dev
 
 start playserver with debug port 9999
 1. /sbt run -jvm-debug 9999
-2. cd frontend/react-redux-simple-twitter-app
+2. cd frontend/app
 3. npm install  
 5. npm run devPlayServer
